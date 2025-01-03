@@ -1,3 +1,1 @@
-#!/usr/bin/env bash
-
-uv run ansible-playbook -i inventory/test "$@"
+run-ansible-base.sh
