@@ -14,6 +14,8 @@ dependencies = [
     "pydantic>=2.10.3",
     "pip>=24.3.1",
     "pulumi-cloudflare>=5.44.0",
+    "ansible>=11.1.0",
+    "ansible-lint>=6.8.7",
 ]
 
 [dependency-groups]
