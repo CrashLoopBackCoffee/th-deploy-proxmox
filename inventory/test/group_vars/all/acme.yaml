@@ -10,4 +10,4 @@ acme:
       - key: CF_Token
         value: "{{ lookup('env', 'CLOUDFLARE_TOKEN', default=Undefined) }}"
     name: cloudflare-test
-  staging: true
+  staging: false
