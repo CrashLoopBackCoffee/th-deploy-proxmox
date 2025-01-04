@@ -2,3 +2,4 @@
 - import_playbook: proxmox-acme-pve.yaml
 - import_playbook: proxmox-acme-pbs.yaml
 - import_playbook: proxmox-node-exporter.yaml
+- import_playbook: proxmox-local-snippets.yaml
