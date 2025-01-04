@@ -1,5 +1,4 @@
 - import_playbook: proxmox-post-install.yaml
 - import_playbook: proxmox-acme-pve.yaml
 - import_playbook: proxmox-acme-pbs.yaml
-- import_playbook: proxmox-backup-nfs.yaml
 - import_playbook: proxmox-node-exporter.yaml
