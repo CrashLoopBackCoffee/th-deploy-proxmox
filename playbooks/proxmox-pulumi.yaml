@@ -23,7 +23,7 @@
 
         # Check if item exists
         TITLE="{{ ansible_hostname }} Token {{ pulumi_user }}@pve {{ pulumi_token_name }}"
-        PASSWORD="{{ (create_token_result.stdout | from_json).value }}"
+        PASSWORD="{{ pulumi_user }}@pve!{{ pulumi_token_name }}={{ (create_token_result.stdout | from_json).value }}"
 
         if op item get --vault "{{ vault }}" "${TITLE}"; then
           echo "Item exists, updating..."
