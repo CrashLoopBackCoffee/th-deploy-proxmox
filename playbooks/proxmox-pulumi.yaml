@@ -4,8 +4,13 @@
 
   vars:
     pulumi_user: pulumi
+    pulumi_token_name: pulumi
 
   roles:
     - role: ensure-pve-user
       ensure_pve_user_username: "{{ pulumi_user }}"
       ensure_pve_user_role: PVEAdmin
+
+    - role: ensure-pve-api-token
+      ensure_api_token_userid: "{{ pulumi_user }}@pve"
+      ensure_api_token_name: "{{ pulumi_token_name }}"
