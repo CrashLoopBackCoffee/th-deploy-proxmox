@@ -1,0 +1,11 @@
+- name: Setup access for Pulumi
+  hosts: pve
+  gather_facts: true
+
+  vars:
+    pulumi_user: pulumi
+
+  roles:
+    - role: ensure-pve-user
+      ensure_pve_user_username: "{{ pulumi_user }}"
+      ensure_pve_user_role: PVEAdmin
